@@ -1,0 +1,90 @@
+version: '2'
+
+services:
+
+  elasticsearch:
+    build:
+      context: elasticsearch/
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+
+  logstash:
+    build:
+      context: logstash/
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
+    ports:
+      - "514:514/udp"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    links:
+      - elasticsearch
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+    cap_add:
+      - NET_BIND_SERVICE
+
+  kibana:
+    build:
+      context: kibana/
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config:ro
+    links:
+      - elasticsearch
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+  kibana-ro:
+    build:
+      context: kibana-ro/
+    volumes:
+      - ./kibana-ro/config/:/usr/share/kibana/config:ro
+    links:
+      - apache-ro
+    networks:
+      - elk
+    depends_on:
+      - apache-ro
+
+  apache-ro:
+    build:
+      context: apache-ro/
+#    volumes:
+#      - ./apache/config/:/etc/apache2/
+    links:
+      - elasticsearch
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+  haproxy:
+    build:
+      context: haproxy/
+    volumes:
+      - ./haproxy/config/:/etc/haproxy/
+    ports:
+      - "80:80"
+      - "443:443"
+    links:
+      - kibana
+      - kibana-ro
+    networks:
+      - elk
+    depends_on:
+      - kibana
+      - kibana-ro
+
+networks:
+
+  elk:
+    driver: bridge

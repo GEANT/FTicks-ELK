@@ -1,0 +1,59 @@
+{
+    "index_patterns": [
+      "fticks*"
+    ],
+    "settings": {
+      "index": {
+        "refresh_interval": "5s"
+      }
+    },
+    "mappings": {
+      "default": {
+        "properties": {
+          "RP_geoip": {
+            "dynamic": true,
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "location": {
+                "type": "geo_point"
+              },
+              "latitude": {
+                "type": "half_float"
+              },
+              "longitude": {
+                "type": "half_float"
+              }
+            }
+          },
+          "AP_geoip": {
+            "dynamic": true,
+            "properties": {
+              "ip": {
+                "type": "ip"
+              },
+              "location": {
+                "type": "geo_point"
+              },
+              "latitude": {
+                "type": "half_float"
+              },
+              "longitude": {
+                "type": "half_float"
+              }
+            }
+          },
+          "AP_uri_domain": {
+            "type": "text",
+            "fielddata": true
+          },
+          "RP_uri_domain": {
+            "type": "text",
+            "fielddata": true
+          }
+        }
+      }
+    }
+}
+
