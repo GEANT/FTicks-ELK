@@ -5,3 +5,4 @@ FROM docker.elastic.co/logstash/logstash-oss:6.3.0
 # Example: RUN logstash-plugin install logstash-filter-json
 RUN logstash-plugin install logstash-input-syslog
 RUN logstash-plugin install logstash-output-syslog
+

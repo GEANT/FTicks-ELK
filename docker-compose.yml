@@ -7,6 +7,7 @@ services:
       context: elasticsearch/
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./elasticsearch/data:/usr/share/elasticsearch/data
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
     networks:
@@ -19,7 +20,7 @@ services:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
       - ./logstash/pipeline:/usr/share/logstash/pipeline:ro
     ports:
-      - "514:514/udp"
+      - "5140:514/udp"
     environment:
       LS_JAVA_OPTS: "-Xmx256m -Xms256m"
     links:
@@ -58,8 +59,8 @@ services:
   apache-ro:
     build:
       context: apache-ro/
-#    volumes:
-#      - ./apache/config/:/etc/apache2/
+    volumes:
+      - ./apache-ro/config/httpd.conf:/usr/local/apache2/conf/httpd.conf:ro
     links:
       - elasticsearch
     networks:
@@ -74,6 +75,7 @@ services:
       - ./haproxy/config/:/etc/haproxy/
     ports:
       - "80:80"
+      - "8080:8080"
       - "443:443"
     links:
       - kibana
