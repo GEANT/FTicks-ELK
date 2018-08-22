@@ -19,5 +19,7 @@ curl -XPOST -H "Content-Type: application/json" -H "kbn-xsrf: anything" \
   "http://kibana:5601/api/kibana/settings/defaultIndex" \
   -d"{\"value\":\"fticks*\"}"
 
+./kibana-importer.py --json import.json  --kibana-url http://kibana:5601
+
 /docker-entrypoint.sh haproxy -f /usr/local/etc/haproxy/haproxy.cfg
 

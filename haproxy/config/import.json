@@ -1,0 +1,174 @@
+[
+  {
+    "_id": "10fa1730-6130-11e8-9ea5-8de2e1df856c",
+    "_type": "dashboard",
+    "_source": {
+      "title": "FTICKS",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[\n {\n \"panelIndex\": \"1\",\n \"gridData\": {\n \"x\": 0,\n \"y\": 0,\n \"w\": 6,\n \"h\": 3,\n \"i\": \"1\"\n },\n \"embeddableConfig\": {\n \"mapCenter\": [\n 43.83452678223684,\n 0\n ],\n \"mapZoom\": 2\n },\n \"id\": \"d6b38f60-612b-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"2\",\n \"gridData\": {\n \"x\": 6,\n \"y\": 0,\n \"w\": 6,\n \"h\": 3,\n \"i\": \"2\"\n },\n \"embeddableConfig\": {\n \"mapCenter\": [\n 36.87962060502676,\n 0\n],\n \"mapZoom\": 2\n },\n \"id\": \"ebd9af00-612b-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"5\",\n \"gridData\": {\n \"x\": 0,\n \"y\": 11,\n \"w\": 12,\n \"h\": 6,\n \"i\": \"5\"\n },\n \"id\": \"f4230b00-612d-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"6\",\n \"gridData\": {\n \"x\": 0,\n \"y\": 8,\n \"w\": 6,\n \"h\": 3,\n \"i\": \"6\"\n },\n \"embeddableConfig\": {\n \"vis\": {\n \"legendOpen\": false\n }\n },\n \"id\": \"73150f30-612e-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"7\",\n \"gridData\": {\n \"x\": 0,\n \"y\": 3,\n \"w\": 6,\n \"h\": 5,\n \"i\": \"7\"\n },\n \"id\": \"d4da3eb0-612f-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"8\",\n \"gridData\": {\n \"x\": 6,\n \"y\": 3,\n \"w\": 6,\n \"h\": 5,\n \"i\": \"8\"\n },\n \"id\": \"ebebdaa0-612f-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n },\n {\n \"panelIndex\": \"9\",\n \"gridData\": {\n \"x\": 6,\n \"y\": 8,\n \"w\": 6,\n \"h\": 3,\n \"i\": \"9\"\n },\n \"id\": \"c293ef80-675b-11e8-9ea5-8de2e1df856c\",\n \"type\": \"visualization\",\n \"version\": \"6.2.4\"\n }\n]",
+      "optionsJSON": "{\n \"darkTheme\": false,\n \"hidePanelTitles\": false,\n \"useMargins\": true\n}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"query\": {\n \"language\": \"lucene\",\n \"query\": \"\"\n },\n \"filter\": [],\n \"highlightAll\": true,\n \"version\": true\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "9828bf70-612d-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "IDP_count",
+      "visState": "{\n \"title\": \"IDP_count\",\n \"type\": \"histogram\",\n \"params\": {\n \"type\": \"histogram\",\n \"grid\": {\n \"categoryLines\": false,\n \"style\": {\n \"color\": \"#eee\"\n }\n },\n \"categoryAxes\": [\n {\n \"id\": \"CategoryAxis-1\",\n \"type\": \"category\",\n \"position\": \"bottom\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\"\n },\n \"labels\": {\n \"show\": true,\n \"truncate\": 100\n },\n \"title\": {}\n }\n ],\n \"valueAxes\": [\n {\n \"id\": \"ValueAxis-1\",\n \"name\": \"LeftAxis-1\",\n \"type\": \"value\",\n \"position\": \"left\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\",\n \"mode\": \"normal\"\n },\n \"labels\": {\n \"show\": true,\n \"rotate\": 0,\n \"filter\": false,\n \"truncate\": 100\n },\n \"title\": {\n \"text\": \"Unique users\"\n }\n }\n ],\n \"seriesParams\": [\n {\n \"show\": \"true\",\n \"type\": \"histogram\",\n \"mode\": \"normal\",\n \"data\": {\n \"label\": \"Unique users\",\n \"id\": \"1\"\n },\n \"valueAxis\": \"ValueAxis-1\",\n \"drawLinesBetweenPoints\": true,\n \"showCircles\": true\n },\n {\n \"show\": true,\n \"mode\": \"normal\",\n \"type\": \"histogram\",\n \"drawLinesBetweenPoints\": true,\n \"showCircles\": true,\n \"data\": {\n \"id\": \"2\",\n \"label\": \"Total logons\"\n },\n \"valueAxis\": \"ValueAxis-1\"\n }\n ],\n \"addTooltip\": true,\n \"addLegend\": true,\n \"legendPosition\": \"right\",\n \"times\": [],\n \"addTimeMarker\": false\n },\n \"aggs\": [\n {\n \"id\": \"1\",\n \"enabled\": true,\n \"type\": \"cardinality\",\n \"schema\": \"metric\",\n \"params\": {\n \"field\": \"PN.keyword\",\n \"customLabel\": \"Unique users\"\n }\n },\n {\n \"id\": \"2\",\n \"enabled\": true,\n \"type\": \"count\",\n \"schema\": \"metric\",\n \"params\": {\n \"customLabel\": \"Total logons\"\n }\n },\n {\n \"id\": \"3\",\n \"enabled\": true,\n \"type\": \"terms\",\n \"schema\": \"segment\",\n \"params\": {\n \"field\": \"AP_uri_domain.keyword\",\n \"otherBucket\": false,\n \"otherBucketLabel\": \"Other\",\n \"missingBucket\": false,\n \"missingBucketLabel\": \"Missing\",\n \"size\": 5,\n \"order\": \"desc\",\n \"orderBy\": \"1\",\n \"customLabel\": \"IdP\"\n }\n }\n ]\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"index\": \"fticks*\",\n \"filter\": [],\n \"query\": {\n \"query\": \"\",\n \"language\": \"lucene\"\n }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "aca9bae0-612c-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "SP_count",
+      "visState": "{\n \"title\": \"SP_count\",\n \"type\": \"histogram\",\n \"params\": {\n \"type\": \"histogram\",\n \"grid\": {\n \"categoryLines\": false,\n \"style\": {\n \"color\": \"#eee\"\n }\n },\n \"categoryAxes\": [\n {\n \"id\": \"CategoryAxis-1\",\n \"type\": \"category\",\n \"position\": \"bottom\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\"\n },\n \"labels\": {\n \"show\": true,\n \"truncate\": 100\n },\n \"title\": {}\n }\n ],\n \"valueAxes\": [\n {\n \"id\": \"ValueAxis-1\",\n \"name\": \"LeftAxis-1\",\n \"type\": \"value\",\n \"position\": \"left\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\",\n \"mode\": \"normal\"\n },\n \"labels\": {\n \"show\": true,\n \"rotate\": 0,\n \"filter\": false,\n \"truncate\": 100\n },\n \"title\": {\n \"text\": \"Unique users\"\n }\n }\n ],\n \"seriesParams\": [\n {\n \"show\": \"true\",\n \"type\": \"histogram\",\n \"mode\": \"normal\",\n \"data\": {\n \"label\": \"Unique users\",\n \"id\": \"1\"\n },\n \"valueAxis\": \"ValueAxis-1\",\n \"drawLinesBetweenPoints\": true,\n \"showCircles\": true\n },\n {\n \"show\": true,\n \"mode\": \"stacked\",\n \"type\": \"histogram\",\n \"drawLinesBetweenPoints\": true,\n \"showCircles\": true,\n \"data\": {\n \"id\": \"3\",\n \"label\": \"Total logons\"\n },\n \"valueAxis\": \"ValueAxis-1\"\n }\n ],\n \"addTooltip\": true,\n \"addLegend\": true,\n \"legendPosition\": \"right\",\n \"times\": [],\n \"addTimeMarker\": false\n },\n \"aggs\": [\n {\n \"id\": \"1\",\n \"enabled\": true,\n \"type\": \"cardinality\",\n \"schema\": \"metric\",\n \"params\": {\n \"field\": \"PN.keyword\",\n \"customLabel\": \"Unique users\"\n }\n },\n {\n \"id\": \"2\",\n \"enabled\": true,\n \"type\": \"terms\",\n \"schema\": \"segment\",\n \"params\": {\n \"field\": \"RP_uri_domain.keyword\",\n \"otherBucket\": false,\n \"otherBucketLabel\": \"Other\",\n \"missingBucket\": false,\n \"missingBucketLabel\": \"Missing\",\n \"size\": 10,\n \"order\": \"desc\",\n \"orderBy\": \"1\"\n }\n },\n {\n \"id\": \"3\",\n \"enabled\": true,\n \"type\": \"count\",\n \"schema\": \"metric\",\n \"params\": {\n \"customLabel\": \"Total logons\"\n }\n }\n ]\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"index\": \"fticks*\",\n \"filter\": [],\n \"query\": {\n \"query\": \"\",\n \"language\": \"lucene\"\n }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d4da3eb0-612f-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "IDP_count_horizontal",
+      "visState": "{\"title\":\"IDP_count_horizontal\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Total logons\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Total logons\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"normal\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Unique users\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total logons\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"AP_uri_domain.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IdP\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"PN.keyword\",\"customLabel\":\"Unique users\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fticks*\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ebebdaa0-612f-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "SP_count_horizontal",
+      "visState": "{\"title\":\"SP_count_horizontal\",\"type\":\"horizontal_bar\",\"params\":{\"type\":\"histogram\",\"grid\":{\"categoryLines\":false,\"style\":{\"color\":\"#eee\"}},\"categoryAxes\":[{\"id\":\"CategoryAxis-1\",\"type\":\"category\",\"position\":\"left\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\"},\"labels\":{\"show\":true,\"rotate\":0,\"filter\":false,\"truncate\":200},\"title\":{}}],\"valueAxes\":[{\"id\":\"ValueAxis-1\",\"name\":\"LeftAxis-1\",\"type\":\"value\",\"position\":\"bottom\",\"show\":true,\"style\":{},\"scale\":{\"type\":\"linear\",\"mode\":\"normal\"},\"labels\":{\"show\":true,\"rotate\":75,\"filter\":true,\"truncate\":100},\"title\":{\"text\":\"Total logons\"}}],\"seriesParams\":[{\"show\":true,\"type\":\"histogram\",\"mode\":\"normal\",\"data\":{\"label\":\"Total logons\",\"id\":\"1\"},\"valueAxis\":\"ValueAxis-1\",\"drawLinesBetweenPoints\":true,\"showCircles\":true},{\"show\":true,\"mode\":\"normal\",\"type\":\"histogram\",\"drawLinesBetweenPoints\":true,\"showCircles\":true,\"data\":{\"id\":\"3\",\"label\":\"Unique users\"},\"valueAxis\":\"ValueAxis-1\"}],\"addTooltip\":true,\"addLegend\":true,\"legendPosition\":\"right\",\"times\":[],\"addTimeMarker\":false},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total logons\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"RP_uri_domain.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"SP\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"cardinality\",\"schema\":\"metric\",\"params\":{\"field\":\"PN.keyword\",\"customLabel\":\"Unique users\"}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fticks*\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "c293ef80-675b-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "IdP_SP_heatmap_countries",
+      "visState": "{\n \"title\": \"IdP_SP_heatmap_countries\",\n \"type\": \"heatmap\",\n \"params\": {\n \"type\": \"heatmap\",\n \"addTooltip\": true,\n \"addLegend\": true,\n \"enableHover\": false,\n \"legendPosition\": \"right\",\n \"times\": [],\n \"colorsNumber\": 4,\n \"colorSchema\": \"Greens\",\n \"setColorRange\": false,\n \"colorsRange\": [],\n \"invertColors\": false,\n \"percentageMode\": false,\n \"valueAxes\": [\n {\n \"show\": false,\n \"id\": \"ValueAxis-1\",\n \"type\": \"value\",\n \"scale\": {\n \"type\": \"linear\",\n \"defaultYExtents\": false\n },\n \"labels\": {\n \"show\": false,\n \"rotate\": 0,\n \"color\": \"#555\"\n }\n }\n ]\n },\n \"aggs\": [\n {\n \"id\": \"1\",\n \"enabled\": true,\n \"type\": \"count\",\n \"schema\": \"metric\",\n \"params\": {\n \"customLabel\": \"Total logons\"\n }\n },\n {\n \"id\": \"2\",\n \"enabled\": true,\n \"type\": \"significant_terms\",\n \"schema\": \"segment\",\n \"params\": {\n \"field\": \"AP_geoip.country_code2.keyword\",\n \"size\": 20,\n \"customLabel\": \"IdP country\"\n }\n },\n {\n \"id\": \"3\",\n \"enabled\": true,\n \"type\": \"significant_terms\",\n \"schema\": \"group\",\n \"params\": {\n \"field\": \"RP_geoip.country_code2.keyword\",\n \"size\": 20,\n \"customLabel\": \"SP country\"\n }\n }\n ]\n}",
+      "uiStateJSON": "{\n \"vis\": {\n \"defaultColors\": {\n \"0 - 1,125\": \"rgb(247,252,245)\",\n \"1,125 - 2,250\": \"rgb(199,233,192)\",\n \"2,250 - 3,375\": \"rgb(116,196,118)\",\n \"3,375 - 4,500\": \"rgb(35,139,69)\"\n }\n },\n \"spy\": null\n}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"index\": \"fticks*\",\n \"filter\": [],\n \"query\": {\n \"query\": \"\",\n \"language\": \"lucene\"\n }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "ebd9af00-612b-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "RP_map",
+      "visState": "{\"title\":\"RP_map\",\"type\":\"tile_map\",\"params\":{\"mapType\":\"Shaded Circle Markers\",\"isDesaturated\":true,\"addTooltip\":true,\"heatClusterSize\":1.5,\"legendPosition\":\"bottomright\",\"mapZoom\":2,\"mapCenter\":[0,0],\"wms\":{\"enabled\":false,\"options\":{\"format\":\"image/png\",\"transparent\":true},\"baseLayersAreLoaded\":{},\"tmsLayers\":[{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.2.4\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}],\"selectedTmsLayer\":{\"id\":\"road_map\",\"url\":\"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.2.4\",\"minZoom\":0,\"maxZoom\":10,\"attribution\":\"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\"subdomains\":[]}}},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{}},{\"id\":\"2\",\"enabled\":true,\"type\":\"geohash_grid\",\"schema\":\"segment\",\"params\":{\"field\":\"RP_geoip.location\",\"autoPrecision\":true,\"isFilteredByCollar\":true,\"useGeocentroid\":true,\"precision\":2}}]}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fticks*\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "f4230b00-612d-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "IdP_SP_heatmap",
+      "visState": "{\"title\":\"IdP_SP_heatmap\",\"type\":\"heatmap\",\"params\":{\"type\":\"heatmap\",\"addTooltip\":true,\"addLegend\":true,\"enableHover\":false,\"legendPosition\":\"right\",\"times\":[],\"colorsNumber\":4,\"colorSchema\":\"Greens\",\"setColorRange\":false,\"colorsRange\":[],\"invertColors\":false,\"percentageMode\":false,\"valueAxes\":[{\"show\":false,\"id\":\"ValueAxis-1\",\"type\":\"value\",\"scale\":{\"type\":\"linear\",\"defaultYExtents\":false},\"labels\":{\"show\":false,\"rotate\":0,\"color\":\"#555\"}}]},\"aggs\":[{\"id\":\"1\",\"enabled\":true,\"type\":\"count\",\"schema\":\"metric\",\"params\":{\"customLabel\":\"Total logons\"}},{\"id\":\"3\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"group\",\"params\":{\"field\":\"RP_uri_domain.keyword\",\"otherBucket\":true,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":24,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"SP\"}},{\"id\":\"2\",\"enabled\":true,\"type\":\"terms\",\"schema\":\"segment\",\"params\":{\"field\":\"AP_uri_domain.keyword\",\"otherBucket\":false,\"otherBucketLabel\":\"Other\",\"missingBucket\":false,\"missingBucketLabel\":\"Missing\",\"size\":50,\"order\":\"desc\",\"orderBy\":\"1\",\"customLabel\":\"IdP\"}}]}",
+      "uiStateJSON": "{\"vis\":{\"defaultColors\":{\"0 - 6,000\":\"rgb(247,252,245)\",\"6,000 - 12,000\":\"rgb(199,233,192)\",\"12,000 - 18,000\":\"rgb(116,196,118)\",\"18,000 - 24,000\":\"rgb(35,139,69)\"}}}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"fticks*\",\"filter\":[],\"query\":{\"query\":\"\",\"language\":\"lucene\"}}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "73150f30-612e-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "Total logons",
+      "visState": "{\n \"title\": \"Total logons\",\n \"type\": \"histogram\",\n \"params\": {\n \"type\": \"histogram\",\n \"grid\": {\n \"categoryLines\": false,\n \"style\": {\n \"color\": \"#eee\"\n }\n },\n \"categoryAxes\": [\n {\n \"id\": \"CategoryAxis-1\",\n \"type\": \"category\",\n \"position\": \"bottom\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\"\n },\n \"labels\": {\n \"show\": true,\n \"truncate\": 100\n },\n \"title\": {}\n }\n ],\n \"valueAxes\": [\n {\n \"id\": \"ValueAxis-1\",\n \"name\": \"LeftAxis-1\",\n \"type\": \"value\",\n \"position\": \"left\",\n \"show\": true,\n \"style\": {},\n \"scale\": {\n \"type\": \"linear\",\n \"mode\": \"normal\"\n },\n \"labels\": {\n \"show\": true,\n \"rotate\": 0,\n \"filter\": false,\n \"truncate\": 100\n },\n \"title\": {\n \"text\": \"Total logons\"\n }\n }\n ],\n \"seriesParams\": [\n {\n \"show\": \"true\",\n \"type\": \"histogram\",\n \"mode\": \"stacked\",\n \"data\": {\n \"label\": \"Total logons\",\n \"id\": \"1\"\n },\n \"valueAxis\": \"ValueAxis-1\",\n \"drawLinesBetweenPoints\": true,\n \"showCircles\": true\n }\n ],\n \"addTooltip\": true,\n \"addLegend\": true,\n \"legendPosition\": \"right\",\n \"times\": [],\n \"addTimeMarker\": false\n },\n \"aggs\": [\n {\n \"id\": \"1\",\n \"enabled\": true,\n \"type\": \"count\",\n \"schema\": \"metric\",\n \"params\": {\n \"customLabel\": \"Total logons\"\n }\n },\n {\n \"id\": \"2\",\n \"enabled\": true,\n \"type\": \"date_histogram\",\n \"schema\": \"segment\",\n \"params\": {\n \"field\": \"@timestamp\",\n \"interval\": \"auto\",\n \"customInterval\": \"2h\",\n \"min_doc_count\": 1,\n \"extended_bounds\": {}\n }\n }\n ]\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"index\": \"fticks*\",\n \"filter\": [],\n \"query\": {\n \"query\": \"\",\n \"language\": \"lucene\"\n }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  },
+  {
+    "_id": "d6b38f60-612b-11e8-9ea5-8de2e1df856c",
+    "_type": "visualization",
+    "_source": {
+      "title": "AP_map",
+      "visState": "{\n \"title\": \"AP_map\",\n \"type\": \"tile_map\",\n \"params\": {\n \"mapType\": \"Shaded Circle Markers\",\n \"isDesaturated\": true,\n \"addTooltip\": true,\n \"heatClusterSize\": 1.5,\n \"legendPosition\": \"bottomright\",\n \"mapZoom\": 2,\n \"mapCenter\": [\n 0,\n 0\n ],\n \"wms\": {\n \"enabled\": false,\n \"options\": {\n \"format\": \"image/png\",\n \"transparent\": true\n },\n \"baseLayersAreLoaded\": {},\n \"tmsLayers\": [\n {\n \"id\": \"road_map\",\n \"url\": \"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.2.4\",\n \"minZoom\": 0,\n \"maxZoom\": 10,\n \"attribution\": \"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\n \"subdomains\": []\n }\n ],\n \"selectedTmsLayer\": {\n \"id\": \"road_map\",\n \"url\": \"https://tiles.maps.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana&my_app_version=6.2.4\",\n \"minZoom\": 0,\n \"maxZoom\": 10,\n \"attribution\": \"<p>&#169; <a href=\\\"http://www.openstreetmap.org/copyright\\\">OpenStreetMap</a> contributors | <a href=\\\"https://www.elastic.co/elastic-maps-service\\\">Elastic Maps Service</a></p>&#10;\",\n \"subdomains\": []\n }\n }\n },\n \"aggs\": [\n {\n \"id\": \"1\",\n \"enabled\": true,\n \"type\": \"count\",\n \"schema\": \"metric\",\n \"params\": {}\n },\n {\n \"id\": \"2\",\n \"enabled\": true,\n \"type\": \"geohash_grid\",\n \"schema\": \"segment\",\n \"params\": {\n \"field\": \"AP_geoip.location\",\n \"autoPrecision\": true,\n \"isFilteredByCollar\": true,\n \"useGeocentroid\": true,\n \"precision\": 2\n }\n }\n ]\n}",
+      "uiStateJSON": "{}",
+      "description": "",
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\n \"index\": \"fticks*\",\n \"filter\": [],\n \"query\": {\n \"query\": \"\",\n \"language\": \"lucene\"\n }\n}"
+      }
+    },
+    "_meta": {
+      "savedObjectVersion": 2
+    }
+  }
+]
