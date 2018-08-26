@@ -5,5 +5,5 @@ Useage:
 docker-compose build
 docker-compose up
 
-It listens to port 80 for public viewers (limited only to viewing), and on port 81 for fully accessible kibana (inital user: geant, pass: jra3t1).
+It listens to port 80 for public viewers (limited only to viewing), and on port 8080 for fully accessible kibana (inital user: geant, pass: jra3t1).
 
