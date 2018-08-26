@@ -6,3 +6,4 @@ server.name: kibana
 server.host: "0"
 elasticsearch.url: http://apache-ro:80
 kibana.defaultAppId: dashboard/10fa1730-6130-11e8-9ea5-8de2e1df856c
+timelion.enabled: false
